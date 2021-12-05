@@ -1,0 +1,335 @@
+/*BODY*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;  
+}
+
+/*HEADER*/
+header{
+    background-color: #00AAB5 ;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    padding: 30px;
+}
+
+header p{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    color: #fff;
+    
+    text-decoration: none;
+    margin: 10px 1px 10px 1px;
+    padding: 15px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+nav a:hover{
+    background-color: rgb(65, 221, 187);
+    border-radius: 10px;
+}
+/*MAIN*/
+/*Barner*/
+.banner{
+    position: relative;
+}
+
+.banner h1{ 
+    position:absolute;   
+    align-items: center;
+    color: #fff;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.banner img{
+    width: 100%;    
+}
+
+.banner div{
+    position:absolute;
+    color: #fff;
+} 
+
+.name{
+    background-color: rgba(114, 153, 254, 0.5);
+    width: 400px ;
+    height: 100px;
+    font-size: 40px ;
+    padding: 30px;
+    bottom: 200px;
+    left: 120px;
+    border-radius: 10px;
+}
+
+/*Section skills*/
+.skills{
+    background-color: #7299FE ;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.skills h2{
+    color: #B508A3;
+}
+
+.container-1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap:20px;
+    flex-wrap: wrap;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+label{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+/*Section service*/
+.service{
+    background-color: #FB7171 ;
+    padding-left:15%;
+    padding-right: 15%;
+}
+
+.service h2{
+    color: #00CC9B;
+}
+
+.service p{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-2{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    text-align: center;
+    padding-bottom: 50px;    
+}
+
+/*Section briefcase*/
+.briefcase{
+    background-color: #FFD233 ;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 50px;
+}
+.container-3{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 10px;
+    align-items: center;
+}
+.briefcase h2{
+    color: #8402A5;
+}
+
+/*Section client*/
+.client{
+    background-color: #3F4E62 ;    
+    padding-bottom: 50px;
+}
+
+.client h2{
+    color: #FF00C7;
+}
+
+.container-4{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+/*Section contact*/
+.contact{   
+    background-color: #16A085 ;
+    margin-top: 0;
+    padding-bottom: 50PX;
+}
+
+.contact h2{
+    color: #CEE000;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap:18px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+form input{
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid rgb(130, 226, 117);
+}
+
+form textarea{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid rgb(130, 226, 117);
+    height: 150px;    
+}
+
+button{
+    margin-top: 22px;
+    margin-left: 45%;
+    width: 100px;
+    height: 45px;
+    color: rgb(184, 187, 216);
+    background-color:#233451 ;
+}
+
+/*FOOTER*/
+footer{
+    background: #00AAB5;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    height: 80px;
+    padding: 0 30px;    
+}
+footer p{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*RESPONSIVE*/
+/*Reponsive Tablet*/
+@media (max-width:720px) and (min-width:360px){
+
+    /*header*/
+    header{
+        padding-top: 15px;
+        display: block;
+        height: 65px;
+        padding-bottom: 30px;
+    }
+
+    header p{
+        text-align: center;
+    }
+
+    /*barner*/
+    .banner h1{ 
+        font-size: 40px;
+        
+    }
+
+    .name{
+        width: 200px ;
+        height: 50px;
+        font-size: 25px ;
+        padding: 20px;
+        bottom: 50px;
+        left: 20px;
+    }
+    
+    /*Skills*/
+    .container-1{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    /*service*/
+    .container-2{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 50px;        
+    }
+
+    /*briefcase*/
+    .container-3{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 10px;
+        padding-left: 30%;        
+    }
+
+    /*client*/
+    .container-4{
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 10px;
+        padding-left: 30%;        
+    }
+}
+
+/*RESPONSIVE*/
+/*Reponsive Movil*/
+@media (max-width:360px) and (min-width:200px){
+    header{
+        padding-top: 15px;
+        display: block;
+        padding-bottom: 20px;
+        height: 70px;
+        font-size: 20px;
+    }
+
+    header p{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    nav a{
+        font-size: 10px;
+        margin: 5px 1px 5px 1px;
+        padding: 3px;
+    }
+
+    /*skills*/
+    .container-1{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    /*contact*/
+    form{
+        display: grid;
+        grid-template-columns: 100%;       
+    }
+
+    form textarea{
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    button{
+        margin-left: 35%;
+    }
+}
